@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+:root {
+
+    --primary-color: #004777;
+    --secondary-color: #A30000;
+    --accent1-color: #FF7700;
+    --accent2-color: #EFD28D;
+    --heading-font: "Noto Sans", sans-serif;
+    --text–font: "Roboto", sans-serif;
+
+
+
+
+
+
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    font-weight: 400;
+    color: var(--accent1-color);
+}
+
+p {
+    font-family: var(--text–font);
+    font-weight: 100;
+    color: var(--primary-color);
+
+}
+
+.sociallinks a {
+    text-decoration: none;
+}
+
+header {
+    font-weight: bold;
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    position: relative;
+}
+
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 400px;
+    background-color: antiquewhite;
+    opacity: 0.8;
+    margin: 1rem;
+    padding: 1rem;
+
+
+
+
+}
+
+.hero article {
+    position: absolute;
+    background-color: azure;
+    opacity: 0.8;
+    top: 150px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.hero article img {
+    width: 12rem;
+    margin: 2rem;
+    float: right;
+}
+
+
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+
+
+footer {
+    background-color: var(--accent2-color);
+    width: 100%;
+    height: auto;
+}
