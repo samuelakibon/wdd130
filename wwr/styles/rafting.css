@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 
@@ -48,13 +49,56 @@ p {
 
 header {
     font-weight: bold;
+    display: grid;
+    grid-template-columns: 150px auto;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
 }
+
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+header a {
+    display: block;
+    color: navy;
+    padding: 14px;
+    text-decoration: none;
+    font-size: 1.2rem;
+
+}
+
+header a:hover {
+    color: tomato;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+header nav li {
+    flex: 1 1 auto;
+
+}
+
 
 header,
 main,
 footer {
     max-width: 1200px;
     margin: 0 auto;
+}
+
+header img {
+    margin: 0 0.25rem 0 1rem;
+    width: 120px;
+    height: auto;
 }
 
 .hero {
@@ -86,6 +130,9 @@ footer {
 
 }
 
+
+
+
 .hero article img {
     width: 12rem;
     margin: 2rem;
@@ -99,6 +146,17 @@ footer {
     width: 100%;
     height: auto;
     float: right;
+}
+
+
+.histo {
+    margin: 60px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    align-items: center;
+    justify-content: space-around;
+
+
 }
 
 
