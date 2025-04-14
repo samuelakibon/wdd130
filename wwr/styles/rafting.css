@@ -133,6 +133,7 @@ header img {
 
 .hero {
     position: relative;
+
 }
 
 
@@ -434,4 +435,277 @@ button:hover {
 
 .column2 {
     grid-template-columns: 1fr 2fr;
+}
+
+
+
+/* Index styling */
+
+#main-hero {
+    height: 550px;
+}
+
+.cta-text {
+    font-weight: bold;
+    font-size: larger;
+    color: #004777;
+
+
+
+}
+
+.cta {
+    display: block;
+    color: var(--accent2-color);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 20px;
+    background-color: #A30000;
+    /* Deep red to match the text color */
+    transition: background-color 0.3s ease;
+    width: 450px;
+
+
+}
+
+.cta:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.subscriber {
+    width: 400px;
+    height: 460px;
+    position: absolute;
+    top: 657px;
+    right: 75px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+    align-items: end;
+    background-color: var(--accent2-color);
+
+}
+
+
+
+.subscriber fieldset {
+    display: grid;
+    grid-gap: .3rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: .2rem;
+
+
+}
+
+
+.subscriber legend {
+    padding: 0.3rem;
+    color: brown;
+    font-size: 1.3em;
+}
+
+
+.subscriber label,
+.subscriber input,
+.subscriber button,
+.subscriber select,
+.subscriber textarea {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.subscriber label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+
+.subscriber input,
+.subscriber select,
+.subscriber textarea {
+    padding: 0.3rem;
+    font-size: 1.1rem;
+}
+
+
+
+.purpose {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    align-items: start;
+}
+
+.purpose h2 {
+    grid-column: 1 / -1;
+    /* make h2 span full width */
+    text-align: start;
+    padding: 1em 0;
+}
+
+.purpose img {
+
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+.purpose figure {
+    display: grid;
+    align-items: end;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+}
+
+.purpose figcaption {
+    align-self: center;
+}
+
+/* Trip Page */
+
+
+.hero a {
+    position: absolute;
+    top: 150px;
+    right: 400px;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+
+}
+
+
+
+
+table {
+    max-width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    height: 480px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 3px solid var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+th {
+    background-color: var(--accent2-color);
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+.trips-table {
+    margin: 10px;
+}
+
+
+
+.trips-table h2 {
+
+
+    text-align: center;
+    padding: 1em 0;
+    margin-bottom: 1.5rem;
+
+
+}
+
+.trips-card {
+    background-color: var(--accent2-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.trips-card:hover {
+    transform: translateY(-5px);
+}
+
+.trips-card-content {
+    padding: 1em;
+}
+
+.trips-card-content h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.availability-footer {
+    background-color: #007b8f;
+    /* Choose your accent color */
+    color: #ffffff;
+    text-align: center;
+    padding: 0.75em;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+
+
+.trips-information h2 {
+    grid-column: 1/-1;
+    justify-self: center;
+    padding: 1em 0;
+
+}
+
+
+.trips-information {
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+    justify-items: center;
+}
+
+.trips-information img {
+    width: 200px;
+}
+
+
+
+.availability-footer {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 100px;
+}
+
+.bold .available {
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+
+
+footer p {
+    color: #fff;
 }
